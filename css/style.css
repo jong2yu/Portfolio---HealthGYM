@@ -1,3 +1,33 @@
+/* Material Icons */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +41,68 @@ html {
   font-size: 10px;
 }
 html body {
+  width: 100vw;
   overflow-x: hidden;
   text-align: center;
   background: #141516;
   color: #fff;
+}
+html body header {
+  width: 1200px;
+  height: 210px;
+  margin: 0 auto;
+}
+html body header .head {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+html body header .head .open {
+  position: absolute;
+  left: 0;
+  top: 9.3rem;
+  font-size: 1.6rem;
+  color: #65A3EA;
+}
+html body header .head .open span {
+  color: #fff;
+  margin-left: 1.25em;
+}
+html body header .head .logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6rem;
+}
+html body header .head .logo img {
+  width: 6.8rem;
+}
+html body header .head .wrap {
+  position: absolute;
+  right: 0;
+  top: 8.3rem;
+  width: 257px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body header .head .wrap .search {
+  font-size: 30px;
+  color: #fff;
+}
+html body header .head .wrap .search::before {
+  content: "";
+  position: absolute;
+  left: 70px;
+  top: 5px;
+  height: 30px;
+  border-right: 1px dotted white;
+}
+html body header .head .wrap .sns {
+  display: flex;
+}
+html body header .head .wrap .sns li {
+  margin-left: 16px;
 }/*# sourceMappingURL=style.css.map */
