@@ -12,8 +12,8 @@ $(document).ready(function(){
   //   mode:'horizontal',
   //   auto: true,
   //   pause: 1000,
-  //   autoControls: false,  // 시작, 정지버튼 노출 여부 
-	// 	controls: false,      // prev/next 버튼 노출 여부 
+  //   autoControls: false,
+	// 	controls: false, 
 	// 	pager: false,
   // });
 
