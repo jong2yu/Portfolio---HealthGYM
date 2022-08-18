@@ -36,6 +36,22 @@
   text-decoration: none;
 }
 
+.skybtn {
+  border: none;
+  background: #65A3EA;
+  border-radius: 0.1875em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.darkbtn {
+  border: none;
+  background: #000;
+  border-radius: 0.1875em;
+  color: #fff;
+  cursor: pointer;
+}
+
 html {
   font-family: "Play", sans-serif;
   font-size: 10px;
@@ -105,4 +121,130 @@ html body header .head .wrap .sns {
 }
 html body header .head .wrap .sns li {
   margin-left: 16px;
+}
+html body header .menu {
+  width: 1120px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  z-index: 6;
+}
+html body header .menu .main a {
+  display: block;
+  width: 160px;
+  height: 100%;
+  border: 1px solid #dadada;
+  line-height: 50px;
+  font-size: 2.4rem;
+  color: #fff;
+  background: #818181;
+  transition: 0.2s;
+}
+html body header .menu .main a:hover {
+  background: #65A3EA;
+}
+html body main .slide {
+  width: 100vw;
+  height: 800px;
+  margin-top: 25px;
+  display: flex;
+}
+html body main .slide li {
+  position: relative;
+}
+html body main .slide li img {
+  opacity: 0.45;
+}
+html body main .slide li P {
+  font-size: 9.6rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+html body main .slide li button {
+  font-size: 3.2rem;
+  width: 5.625em;
+  height: 1.875em;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+html body main .icons {
+  width: 100vw;
+  height: 700px;
+  background: url("../img/bgwall.jpg");
+  position: relative;
+}
+html body main .icons h4 {
+  font-size: 6.4rem;
+  position: absolute;
+  top: 1.6em;
+  left: 0;
+  right: 0;
+}
+html body main .icons h4 span {
+  color: #65A3EA;
+}
+html body main .icons ul {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, -50%);
+}
+html body main .icons ul li {
+  width: 300px;
+  height: 300px;
+  border-right: 1px dotted #fff;
+  padding-top: 5em;
+}
+html body main .icons ul li p {
+  font-size: 3.6rem;
+  margin-top: 0.3em;
+}
+html body main .icons ul li button {
+  width: 160px;
+  height: 30px;
+  font-size: 2rem;
+  margin-top: 2em;
+}
+html body main .gallery h6 {
+  font-size: 1.6rem;
+  margin: 5.3em 0 0 3em;
+  letter-spacing: 3em;
+}
+html body main .gallery h4 {
+  font-size: 6.4rem;
+  margin-bottom: 1.125em;
+}
+html body main .gallery ul {
+  display: flex;
+}
+html body main .gallery ul li {
+  position: relative;
+}
+html body main .gallery ul li img {
+  opacity: 0.6;
+}
+html body main .gallery ul li span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.6rem;
+  color: #fff;
+}
+html body main .gallery p {
+  font-size: 1.6rem;
+  margin: 4.0625em 0;
+}
+html body main .gallery p button {
+  width: 120px;
+  height: 25px;
+  margin-left: 1.875em;
 }/*# sourceMappingURL=style.css.map */

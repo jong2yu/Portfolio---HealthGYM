@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helth GYM</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <title>Health GYM</title>
+
   <!-- Font : Play // https://fonts.google.com/betterspecimen/Play?query=play-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- BxSlider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <!-- Javascript -->
-  <!-- <script src="js/script.js" defer></script> -->
+  <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -33,19 +40,47 @@
     </ul>
 
     <ul class="menu">
-      <li class="main"><a href="#">Lorem</a>
-        <ul class="sub">
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-          <li><a href="#">Lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li>
-        </ul>
-      </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
+      <li class="main"><a href="#">Lorem</a> <ul class="sub"><li><a href="#">lorem</a></li> <li><a href="#">ipsum</a></li> <li><a href="#">dolor</a></li> <li><a href="#">tetur</a></li></ul> </li>
     </ul>
   </header>
+
+  <main>
+
+    <ul class="slide">
+      <li><a href="#"><img src="img/slide1.jpg" alt="slide"></a><p>STRONGER, HARDER, GOAL</p><button class="skybtn">Button</button></li>
+      <li><a href="#"><img src="img/slide2.jpg" alt="slide"></a><p>STRONGER, HARDER, GOAL</p><button class="skybtn">Button</button></li>
+      <li><a href="#"><img src="img/slide3.jpg" alt="slide"></a><p>STRONGER, HARDER, GOAL</p><button class="skybtn">Button</button></li>
+    </ul>
+
+    <div class="icons">
+      <h4>Let's make your body <span>Health</span></h4>
+      <ul>
+        <li><img src="img/iconmuscle.png" alt="icon"><p>Lorem</p><button class="darkbtn">Button</button></li>
+        <li><img src="img/iconexercise.png" alt="icon"><p>Lorem</p><button class="darkbtn">Button</button></li>
+        <li><img src="img/iconcalendar.png" alt="icon"><p>Lorem</p><button class="darkbtn">Button</button></li>
+        <li><img src="img/iconpill.png" alt="icon"><p>Lorem</p><button class="darkbtn">Button</button></li>
+      </ul>
+    </div>
+
+    <div class="gallery">
+      <h6>Lorem</h6>
+      <h4>Lorem Ipsum</h4>
+      <ul>
+        <li><a href="#"><img src="img/img1.jpg" alt="img"><span>Lorem Ipsum</span></a></li>
+        <li><a href="#"><img src="img/img2.jpg" alt="img"><span>Lorem Ipsum</span></a></li>
+        <li><a href="#"><img src="img/img3.jpg" alt="img"><span>Lorem Ipsum</span></a></li>
+        <li><a href="#"><img src="img/img4.jpg" alt="img"><span>Lorem Ipsum</span></a></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet consectetur.<button class="skybtn">Button</button></p>
+    </div>
+
+  </main>
 
 </body>
 </html>
