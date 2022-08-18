@@ -39,7 +39,7 @@
 .skybtn {
   border: none;
   background: #65A3EA;
-  border-radius: 0.1875em;
+  border-radius: 0.18em;
   color: #fff;
   cursor: pointer;
 }
@@ -47,7 +47,7 @@
 .darkbtn {
   border: none;
   background: #000;
-  border-radius: 0.1875em;
+  border-radius: 0.18em;
   color: #fff;
   cursor: pointer;
 }
@@ -167,8 +167,8 @@ html body main .slide li P {
 }
 html body main .slide li button {
   font-size: 3.2rem;
-  width: 5.625em;
-  height: 1.875em;
+  width: 5.6em;
+  height: 1.9em;
   position: absolute;
   left: 50%;
   top: 60%;
@@ -213,14 +213,17 @@ html body main .icons ul li button {
   font-size: 2rem;
   margin-top: 2em;
 }
+html body main .gallery {
+  height: 900px;
+}
 html body main .gallery h6 {
   font-size: 1.6rem;
-  margin: 5.3em 0 0 3em;
+  margin: 6.6em 0 0 3em;
   letter-spacing: 3em;
 }
 html body main .gallery h4 {
   font-size: 6.4rem;
-  margin-bottom: 1.125em;
+  margin-bottom: 1.6em;
 }
 html body main .gallery ul {
   display: flex;
@@ -241,10 +244,98 @@ html body main .gallery ul li span {
 }
 html body main .gallery p {
   font-size: 1.6rem;
-  margin: 4.0625em 0;
+  margin: 6em 0;
 }
 html body main .gallery p button {
   width: 120px;
   height: 25px;
-  margin-left: 1.875em;
+  margin-left: 1.9em;
+}
+html body main .market {
+  width: 100vw;
+  height: 1080px;
+  background: #202123;
+}
+html body main .market .wrap {
+  width: 1590px;
+  margin: 0 auto;
+  position: relative;
+}
+html body main .market .wrap h4 {
+  font-size: 6.4rem;
+  position: absolute;
+  top: 1.6em;
+}
+html body main .market .wrap ul {
+  display: flex;
+  justify-content: space-between;
+}
+html body main .market .wrap ul li {
+  margin-top: 25em;
+}
+html body main .market .wrap ul li a {
+  color: #fff;
+}
+html body main .market .wrap ul li a strong {
+  font-size: 2.4rem;
+  font-weight: inherit;
+  color: #fff;
+  display: block;
+  text-align: left;
+  margin: 1em 0 0.3em;
+}
+html body main .market .wrap ul li a p {
+  display: flex;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: 1em;
+}
+html body main .market .wrap ul li a p .material-icons {
+  font-size: 1.6rem;
+}
+html body main .market .wrap ul li a p span:nth-child(2) {
+  margin: 0 2em 0 0.6em;
+  position: relative;
+}
+html body main .market .wrap ul li a p span:nth-child(2):before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  right: -1.1em;
+  top: 0.2em;
+}
+html body main .market .wrap ul li a p span:nth-child(3) {
+  color: #65A3EA;
+}
+html body main .market .direct {
+  width: 1080px;
+  height: 200px;
+  display: block;
+  margin: 2.75em auto 0;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-shadow: -0.14em 0 0 #000;
+}
+html body main .market .direct p {
+  position: absolute;
+  left: 1.6em;
+  top: 2.2em;
+}
+html body main .market .direct span {
+  position: absolute;
+  right: 1.2em;
+  top: 1.6em;
+  letter-spacing: 0.3em;
+}
+html body main .market .direct button {
+  position: absolute;
+  right: 7em;
+  bottom: 4.5em;
+  width: 6em;
+  height: 2em;
 }/*# sourceMappingURL=style.css.map */
