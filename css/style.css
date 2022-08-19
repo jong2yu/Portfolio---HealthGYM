@@ -324,7 +324,7 @@ html body main .market .direct {
 html body main .market .direct p {
   position: absolute;
   left: 1.6em;
-  top: 2.2em;
+  top: 2.1em;
 }
 html body main .market .direct span {
   position: absolute;
@@ -338,4 +338,331 @@ html body main .market .direct button {
   bottom: 4.5em;
   width: 6em;
   height: 2em;
+}
+html body main .together {
+  width: 100vw;
+  height: 600px;
+  position: relative;
+}
+html body main .together p {
+  font-size: 1.6rem;
+  letter-spacing: 1em;
+  position: absolute;
+  left: -0.5em;
+  right: 0;
+  top: 11em;
+}
+html body main .together h4 {
+  font-size: 9.6rem;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+html body main .together h6 {
+  font-size: 2.4rem;
+  font-weight: inherit;
+  letter-spacing: 0.4em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 13.3em;
+}
+html body main .together button {
+  font-size: 2.4rem;
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 17em;
+  transform: translate(-50%, -50%);
+}
+html body main .together:before {
+  content: "";
+  background: url(../img/bgtogether.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+html body main .membership {
+  height: 1000px;
+}
+html body main .membership > P {
+  font-size: 2rem;
+  letter-spacing: 1em;
+  margin: 5em auto 0.8em;
+}
+html body main .membership > h4 {
+  font-size: 6.4rem;
+}
+html body main .membership ul {
+  margin-top: 10em;
+  display: flex;
+  align-items: center;
+  padding-left: 15em;
+}
+html body main .membership ul li {
+  width: 500px;
+  height: 600px;
+  background: #202123;
+  border-radius: 1.4rem;
+  transition: 0.2s;
+}
+html body main .membership ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+html body main .membership ul li a h4 {
+  font-size: 6.4rem;
+}
+html body main .membership ul li a .dollar {
+  font-weight: inherit;
+  margin-top: 9.8rem;
+}
+html body main .membership ul li a .dollar span {
+  font-size: 2.4rem;
+  position: relative;
+  top: -1.5em;
+}
+html body main .membership ul li a .line {
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 3em auto 2.5em;
+  background: #65A3EA;
+}
+html body main .membership ul li a p {
+  font-size: 2rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 2em;
+}
+html body main .membership ul li a button {
+  font-size: 2rem;
+  width: 8em;
+  height: 2em;
+}
+html body main .membership ul li:nth-child(2) {
+  margin: 0 6em;
+}
+html body main .membership ul li:hover {
+  transform: translate(-0.6em, -0.6em);
+  box-shadow: 1em 1em 3em black;
+}
+html body main .add {
+  width: 100vw;
+  height: 160px;
+  background: #65A3EA;
+}
+html body main .add span {
+  font-size: 5.4rem;
+  font-weight: bold;
+  position: relative;
+  top: 0.2em;
+}
+html body main .add input {
+  font-size: 2.4rem;
+  width: 500px;
+  height: 2.29em;
+  border-radius: 0.3em;
+  border: none;
+  margin: 2.2em 1em 0 1.6em;
+  padding: 0 0.6em;
+}
+html body main .add button {
+  font-size: 2.4rem;
+  width: 8.3em;
+  height: 2.29em;
+}
+html body main .map {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+}
+html body main .map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+html body main .map .box {
+  width: 540px;
+  height: 300px;
+  background: #202123;
+  position: absolute;
+  left: 20em;
+  top: 10em;
+}
+html body main .map .box .wrap {
+  width: 390px;
+  height: 195px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+html body main .map .box .wrap .text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+html body main .map .box .wrap .text h6 {
+  float: left;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+html body main .map .box .wrap .text .pack {
+  float: right;
+  width: 60%;
+}
+html body main .map .box .wrap .text .pack a {
+  float: left;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+html body main .map .box .wrap .text .pack :hover {
+  text-decoration: underline;
+}
+html body main .map .box .wrap .text:nth-child(2) {
+  top: 50%;
+  transform: translate(0, -10%);
+}
+html body main .map .box .wrap .text:nth-child(3) {
+  top: 100%;
+  transform: translate(0, -20%);
+}
+html body footer {
+  width: 100vw;
+  height: 900px;
+}
+html body footer .container {
+  width: 100%;
+  height: 800px;
+  background: url(../img/bgfooter.jpg);
+  position: relative;
+}
+html body footer .container .wrap {
+  width: 1130px;
+  height: 335px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+html body footer .container .wrap .one img {
+  width: 9.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+html body footer .container .wrap .one p {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 7em;
+  text-align: left;
+}
+html body footer .container .wrap .two {
+  width: 28rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+html body footer .container .wrap .two .box {
+  width: 11rem;
+  height: 14.4rem;
+  text-align: left;
+}
+html body footer .container .wrap .two .box h6 {
+  font-size: 3.2rem;
+  color: #65A3EA;
+  margin: 0 auto 0.2em;
+}
+html body footer .container .wrap .two .box .link a {
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  margin-bottom: 0.3em;
+}
+html body footer .container .wrap .thr {
+  width: 36rem;
+  height: 33.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+html body footer .container .wrap .thr .tag {
+  display: flex;
+  flex-wrap: wrap;
+}
+html body footer .container .wrap .thr .tag a {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  background: #2C2D2E;
+  padding: 0.7em 1.2em;
+  border-radius: 0.25em;
+  margin: 0 1em 0.6em 0;
+}
+html body footer .container .wrap .thr .contact {
+  text-align: left;
+  margin-top: 4.2em;
+}
+html body footer .container .wrap .thr .contact h6 {
+  font-size: 3.2rem;
+  color: #65A3EA;
+}
+html body footer .container .wrap .thr .contact p {
+  font-size: 2rem;
+  white-space: nowrap;
+  margin: 1em auto 0.8em;
+}
+html body footer .container .wrap .thr .contact input {
+  width: 20rem;
+  height: 3.5rem;
+  background: #2C2D2E;
+  border: none;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+html body footer .container .wrap .thr .contact button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 3.5rem;
+  margin-left: 0.6em;
+}
+html body footer .bottom {
+  width: 66%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body footer .bottom p {
+  font-size: 1.6rem;
+  line-height: 6.25em;
+}
+html body footer .bottom .sns {
+  display: flex;
+  align-items: center;
+}
+html body footer .bottom .sns h6 {
+  font-size: 2.4rem;
+  color: #65A3EA;
+  margin-right: 0.6em;
+}
+html body footer .bottom .sns a:nth-child(3) img {
+  margin: 0 0.4em;
 }/*# sourceMappingURL=style.css.map */
