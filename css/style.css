@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 /* Material Icons */
 @font-face {
   font-family: "Material Icons";
@@ -153,7 +154,23 @@ html body main .slide {
   width: 1920px;
   height: 800px;
   margin: 25px auto 0;
-  display: flex;
+}
+html body main .slide .slidebtn {
+  font-size: 10rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 6;
+  cursor: pointer;
+}
+html body main .slide .slick-dots {
+  border: 10px solid yellow;
+}
+html body main .slide .slick-prev {
+  left: 6rem;
+}
+html body main .slide .slick-next {
+  right: 6rem;
 }
 html body main .slide li {
   position: relative;
@@ -180,6 +197,7 @@ html body main .slide li button {
   transform: translate(-50%, -50%);
 }
 html body main .icons {
+  margin-top: 1000px;
   min-width: 1920px;
   height: 700px;
   background: url("../img/bgwall.jpg") no-repeat;
