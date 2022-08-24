@@ -360,13 +360,13 @@ html body main .gallery ul li:hover p {
   opacity: 1;
 }
 html body main .gallery ul li:nth-child(2) img {
-  transition-delay: 0.1s;
+  transition-delay: .1s;
 }
 html body main .gallery ul li:nth-child(3) img {
-  transition-delay: 0.2s;
+  transition-delay: .2s;
 }
 html body main .gallery ul li:nth-child(4) img {
-  transition-delay: 0.3s;
+  transition-delay: .3s;
 }
 html body main .gallery p {
   font-size: 1.6rem;

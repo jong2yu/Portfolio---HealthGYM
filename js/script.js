@@ -28,7 +28,6 @@ $(document).ready(function(){
 
   // Scroll Animation
   $(window).scroll(function(){  
-
     let TOP=$(window).scrollTop();
     let titleOffset = $(".icons ul li img").offset().top;
     titleOffset = titleOffset - 800;
@@ -65,7 +64,6 @@ $(document).ready(function(){
     if (TOP > titleOffsetSix) {
       $("footer .wrap").addClass("on");
     }
-
   })
 
 });
