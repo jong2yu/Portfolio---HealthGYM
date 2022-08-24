@@ -275,6 +275,15 @@ html body main .icons ul li button {
   font-size: 2rem;
   margin-top: 2em;
 }
+html body main .icons ul li:nth-child(2) img {
+  transition-delay: 0.1s;
+}
+html body main .icons ul li:nth-child(3) img {
+  transition-delay: 0.2s;
+}
+html body main .icons ul li:nth-child(4) img {
+  transition-delay: 0.3s;
+}
 html body main .icons ul li:nth-child(4) {
   border: none;
 }
@@ -349,6 +358,15 @@ html body main .gallery ul li:hover span {
 }
 html body main .gallery ul li:hover p {
   opacity: 1;
+}
+html body main .gallery ul li:nth-child(2) img {
+  transition-delay: 0.1s;
+}
+html body main .gallery ul li:nth-child(3) img {
+  transition-delay: 0.2s;
+}
+html body main .gallery ul li:nth-child(4) img {
+  transition-delay: 0.3s;
 }
 html body main .gallery p {
   font-size: 1.6rem;
@@ -430,6 +448,15 @@ html body main .market .wrap ul li a p span:nth-child(2):before {
 }
 html body main .market .wrap ul li a p span:nth-child(3) {
   color: #65A3EA;
+}
+html body main .market .wrap ul li:nth-child(2) img {
+  transition-delay: 0.1s;
+}
+html body main .market .wrap ul li:nth-child(3) img {
+  transition-delay: 0.2s;
+}
+html body main .market .wrap ul li:nth-child(4) img {
+  transition-delay: 0.3s;
 }
 html body main .market .direct {
   width: 1080px;

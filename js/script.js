@@ -8,19 +8,28 @@ $(document).ready(function(){
     $(".menu .sub").stop().slideUp(300);
   });
 
+  // $(".slide").bxSlider({
+  //   mode:'horizontal',
+  //   auto: true,
+  //   pause: 1000,
+  //   autoControls: false,  // 시작, 정지버튼 노출 여부 
+	// 	controls: false,      // prev/next 버튼 노출 여부 
+	// 	pager: false,
+  // });
+
   // Slick Slider
   $('.slide').slick({
-    slide: 'li',
-    infinite : true,
-    slidesToShow : 1,
-    slidesToScroll : 1,
-    speed : 500,
-    arrows : true,
-    dots : true,
-    autoplay : true,
-    autoplaySpeed : 2000,
-    pauseOnHover : true,
-    vertical : false,
+    slide: 'li',        //슬라이드 되어야 할 태그
+    infinite : true,     //무한 반복 옵션     
+    slidesToShow : 1,        // 한 화면에 보여질 컨텐츠 개수
+    slidesToScroll : 1,        //스크롤 한번에 움직일 컨텐츠 개수
+    speed : 500,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+    arrows : true,         // 옆으로 이동하는 화살표 표시 여부
+    dots : true,         // 스크롤바 아래 점으로 페이지네이션 여부
+    autoplay : true,            // 자동 스크롤 사용 여부
+    autoplaySpeed : 2000,         // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+    pauseOnHover : true,        // 슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
+    vertical : false,        // 세로 방향 슬라이드 옵션
     prevArrow : "<span class='slidebtn slick-prev material-icons'>navigate_before</span>",
     nextArrow : "<span class='slidebtn slick-next material-icons'>navigate_next</span>",
     draggable : true
