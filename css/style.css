@@ -205,10 +205,13 @@ html body main .slide .slick-next {
 html body main .slide li {
   position: relative;
 }
-html body main .slide li img {
+html body main .slide li a {
+  color: #fff;
+}
+html body main .slide li a img {
   opacity: 0.45;
 }
-html body main .slide li P {
+html body main .slide li a P {
   font-size: 9.6rem;
   font-weight: bold;
   position: absolute;
@@ -217,7 +220,7 @@ html body main .slide li P {
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-html body main .slide li button {
+html body main .slide li a button {
   font-size: 3.2rem;
   width: 5.6em;
   height: 1.9em;
@@ -360,13 +363,13 @@ html body main .gallery ul li:hover p {
   opacity: 1;
 }
 html body main .gallery ul li:nth-child(2) img {
-  transition-delay: .1s;
+  transition-delay: 0.1s;
 }
 html body main .gallery ul li:nth-child(3) img {
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
 html body main .gallery ul li:nth-child(4) img {
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 html body main .gallery p {
   font-size: 1.6rem;
