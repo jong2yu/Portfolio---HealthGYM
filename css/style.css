@@ -1,32 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 /* Material Icons */
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
-}
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 * {
@@ -146,7 +121,13 @@ html body header .menu {
   position: relative;
   z-index: 6;
 }
-html body header .menu .main a {
+html body header .menu .hamburger {
+  display: none;
+}
+html body header .menu .wrap {
+  display: flex;
+}
+html body header .menu .wrap .main a {
   display: block;
   width: 160px;
   height: 100%;
@@ -157,7 +138,7 @@ html body header .menu .main a {
   background: #818181;
   transition: 0.2s;
 }
-html body header .menu .main a:hover {
+html body header .menu .wrap .main a:hover {
   background: #65A3EA;
 }
 html body main .slide {
@@ -173,6 +154,10 @@ html body main .slide .slidebtn {
   transform: translate(0, -50%);
   z-index: 6;
   cursor: pointer;
+  transition: 0.2s;
+}
+html body main .slide .slidebtn:hover {
+  color: #65A3EA;
 }
 html body main .slide .slick-prev {
   left: 6rem;
@@ -848,4 +833,112 @@ html body footer .bottom .sns h6 {
 }
 html body footer .bottom .sns a:nth-child(3) img {
   margin: 0 0.4em;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+    border: 1px solid yellow;
+  }
+  html body header {
+    width: 100%;
+  }
+  html body header .head .open {
+    margin-top: 4rem;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  html body header .head .open span {
+    display: block;
+    margin: 0;
+    line-height: 3rem;
+  }
+  html body header .head .logo {
+    top: 12rem;
+  }
+  html body header .head .logo img {
+    width: 6rem;
+  }
+  html body header .head .wrap .search {
+    position: absolute;
+    left: -4.5em;
+    top: -1em;
+  }
+  html body header .head .wrap .search:before {
+    display: none;
+  }
+  html body header .head .wrap .sns {
+    position: absolute;
+    left: -6.6em;
+    top: 13em;
+  }
+  html body header .head .wrap .sns li {
+    margin: 0 1.6em;
+  }
+  html body header .head .wrap .sns li img {
+    width: 5rem;
+  }
+  html body header .menu {
+    width: 100%;
+    left: 100%;
+    top: -100%;
+  }
+  html body header .menu .hamburger {
+    display: block;
+    position: absolute;
+    left: -8rem;
+    top: 6rem;
+    font-size: 4rem;
+    width: 4rem;
+    height: 2.5px;
+    background: #fff;
+    border-radius: 2rem;
+    transition: 0.2s;
+  }
+  html body header .menu .hamburger:after,
+html body header .menu .hamburger:before {
+    content: "";
+    width: 4rem;
+    height: 2.5px;
+    background: #fff;
+    border-radius: 2rem;
+    position: absolute;
+    left: 0;
+    transition: 0.2s;
+  }
+  html body header .menu .hamburger:after {
+    top: -1rem;
+  }
+  html body header .menu .hamburger:before {
+    top: 1rem;
+  }
+  html body header .menu .hamburger.on {
+    background: transparent;
+  }
+  html body header .menu .hamburger.on:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  html body header .menu .hamburger.on:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  html body header .menu .hamburger.on {
+    background: transparent;
+  }
+  html body header .menu .wrap {
+    display: block;
+    margin-top: 12rem;
+    transition: 0.2s;
+  }
+  html body header .menu .wrap .main > a {
+    background: #65A3EA;
+  }
+  html body header .menu .wrap .main a {
+    width: 100vw;
+  }
+  html body header .menu .wrap.on {
+    margin-left: -100vw;
+  }
 }/*# sourceMappingURL=style.css.map */
