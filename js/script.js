@@ -54,13 +54,13 @@ $(document).ready(function(){
     }
 
     let titleOffsetFiv = $(".membership .choice").offset().top;
-    titleOffsetFiv = titleOffsetFiv - 200;
+    titleOffsetFiv = titleOffsetFiv - 1000;
     if (TOP > titleOffsetFiv) {
       $(".membership .choice").addClass("on");
     }
 
     let titleOffsetSix = $("footer .wrap").offset().top;
-    titleOffsetSix = titleOffsetSix - 800;
+    titleOffsetSix = titleOffsetSix - 600;
     if (TOP > titleOffsetSix) {
       $("footer .wrap").addClass("on");
     }
