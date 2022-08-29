@@ -3,9 +3,9 @@ $(document).ready(function(){
   // Menu Slide jQuery
   $(".menu .sub").hide();
   $(".menu .main").mouseover(function(){
-    $(".menu .sub").stop().slideDown(300);
+    $(this).find(".sub").stop().slideDown(300);
   }).mouseout(function(){
-    $(".menu .sub").stop().slideUp(300);
+    $(this).find(".sub").stop().slideUp(300);
   });
 
   // Slick Slider
@@ -21,8 +21,8 @@ $(document).ready(function(){
     autoplaySpeed : 2000,
     pauseOnHover : true,
     vertical : false,
-    prevArrow : "<span class='slidebtn slick-prev material-icons'>navigate_before</span>",
-    nextArrow : "<span class='slidebtn slick-next material-icons'>navigate_next</span>",
+    prevArrow : "<span class='material-symbols-outlined slidebtn slick-prev'>chevron_left</span>",
+    nextArrow : "<span class='material-symbols-outlined slidebtn slick-next'>chevron_right</span>",
     draggable : true
   });
 
@@ -64,6 +64,13 @@ $(document).ready(function(){
     if (TOP > titleOffsetSix) {
       $("footer .wrap").addClass("on");
     }
+  })
+
+  // 반응형
+  // Hamburger
+  $(".hamburger").click(function(){
+    $(this).toggleClass("on")
+    $(".menu .wrap").toggleClass("on")
   })
 
 });
