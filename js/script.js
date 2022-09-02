@@ -17,7 +17,7 @@ $(document).ready(function(){
     speed : 500,
     arrows : true,
     dots : true,
-    autoplay : true,
+    autoplay : false,
     autoplaySpeed : 2000,
     pauseOnHover : true,
     vertical : false,
@@ -64,13 +64,26 @@ $(document).ready(function(){
     if (TOP > titleOffsetSix) {
       $("footer .wrap").addClass("on");
     }
-  })
+
+    // #TO TOP
+    if ($(this).scrollTop() > 250) {
+      $('#totop').fadeIn();
+    } else {
+      $('#totop').fadeOut();
+    }
+    $("#totop").click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 400);
+      return false;
+    });
+  });
 
   // 반응형
   // Hamburger
   $(".hamburger").click(function(){
     $(this).toggleClass("on")
     $(".menu .wrap").toggleClass("on")
-  })
+  });
 
 });

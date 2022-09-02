@@ -834,6 +834,23 @@ html body footer .bottom .sns h6 {
 html body footer .bottom .sns a:nth-child(3) img {
   margin: 0 0.4em;
 }
+html body #totop {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 40px;
+  height: 40px;
+  background: #65A3EA;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+}
+html body #totop span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @media screen and (max-width: 480px) {
   html {
