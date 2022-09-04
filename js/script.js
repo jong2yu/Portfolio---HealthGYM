@@ -17,7 +17,7 @@ $(document).ready(function(){
     speed : 500,
     arrows : true,
     dots : true,
-    autoplay : true,
+    autoplay : false,
     autoplaySpeed : 2000,
     pauseOnHover : true,
     vertical : false,
