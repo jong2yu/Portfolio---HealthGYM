@@ -1,34 +1,38 @@
-$(document).ready(function(){
-
-  // Menu Slide jQuery
+// Menu Slide jQuery
+$(document).ready(function () {
   $(".menu .sub").hide();
-  $(".menu .main").mouseover(function(){
+  $(".menu .main").mouseover(function () {
     $(this).find(".sub").stop().slideDown(300);
-  }).mouseout(function(){
+  }).mouseout(function () {
     $(this).find(".sub").stop().slideUp(300);
   });
+})
 
-  // Slick Slider
+// Slick Slider
+$(document).ready(function () {
   $('.slide').slick({
     slide: 'li',
-    infinite : true,
-    slidesToShow : 1,
-    slidesToScroll : 1,
-    speed : 500,
-    arrows : true,
-    dots : true,
-    autoplay : true,
-    autoplaySpeed : 2000,
-    pauseOnHover : true,
-    vertical : false,
-    prevArrow : "<span class='material-symbols-outlined slidebtn slick-prev'>chevron_left</span>",
-    nextArrow : "<span class='material-symbols-outlined slidebtn slick-next'>chevron_right</span>",
-    draggable : true
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    vertical: false,
+    prevArrow: "<span class='material-symbols-outlined slidebtn slick-prev'>chevron_left</span>",
+    nextArrow: "<span class='material-symbols-outlined slidebtn slick-next'>chevron_right</span>",
+    draggable: true
   });
+});
 
-  // Scroll Animation
-  $(window).scroll(function(){  
-    let TOP=$(window).scrollTop();
+// Scroll Animation
+$(document).ready(function () {
+  $(window).scroll(function () {
+
+    let TOP = $(window).scrollTop();
     let titleOffset = $(".icons ul li img").offset().top;
     titleOffset = titleOffset - 800;
     if (TOP > titleOffset) {
@@ -65,25 +69,32 @@ $(document).ready(function(){
       $("footer .wrap").addClass("on");
     }
 
-    // #TO TOP
+  });
+})
+
+// #TO TOP
+$(document).ready(function () {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 250) {
       $('#totop').fadeIn();
     } else {
       $('#totop').fadeOut();
     }
-    $("#totop").click(function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 400);
-      return false;
-    });
   });
 
-  // 반응형
-  // Hamburger
-  $(".hamburger").click(function(){
-    $(this).toggleClass("on")
-    $(".menu .wrap").toggleClass("on")
+  $("#totop").click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 400);
+    return false;
   });
-
 });
+
+// 반응형
+$(document).ready(function () {
+  // Hamburger
+  $(".hamburger").click(function () {
+    $(this).toggleClass("active")
+    $(".menu .wrap").toggleClass("active")
+  });
+})
